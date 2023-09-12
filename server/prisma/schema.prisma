@@ -19,9 +19,9 @@ model User {
 }
 
 model Item {
-  createdAt DateTime @default(now())
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  updatedAt DateTime @updatedAt
-
-  @@id, description, category, price
+  createdAt   DateTime @default(now())
+  description String
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  price       Float?
+  updatedAt   DateTime @updatedAt
 }

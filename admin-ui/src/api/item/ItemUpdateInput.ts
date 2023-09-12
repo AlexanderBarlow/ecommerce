@@ -1,1 +1,4 @@
-export type ItemUpdateInput = {};
+export type ItemUpdateInput = {
+  description?: string;
+  price?: number | null;
+};
